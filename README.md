@@ -2,7 +2,7 @@
 
 ## Summary
 
-When analyzing the CPS data v. Dr. Rice's, I identified **38 variables** with values outside their documented valid ranges. The primary issue was missing value codes (-1, -2, -3) that weren't properly converted to Stata's missing value system (this is common when importing / processing Stata data to different types)
+When analyzing the CPS data v. Dr. Rice's, I identified **41 variables** with values outside their documented valid ranges. The primary issue was missing value codes (-1, -2, -3) that weren't properly converted to Stata's missing value system (this is common when importing / processing Stata data to different types)
 
 ## Here are the variables which need to be recoded to handle missing values:
 
@@ -65,7 +65,7 @@ This was a little more tricky since they were derived variables - but by matchin
 
 - **Total 'problematic' variables**: 38
 - **Original CPS Variables**: 25  
-- **Derived variables**: 13
+- **Derived variables**: 16
 - **Why?**: Missing value codes (such as negative numbers) not converted to Stata missing (`.`)
 
 ## From here, recoding in Stata will be necessary to handle missing values.
